@@ -1,0 +1,5 @@
+install: true
+deploy:
+  provider: firebase
+  token:
+    secure: 1/oNyaQ1jufkphPjDwDDdO4lH_gEGBbP_J9ssTC0cUYg8
