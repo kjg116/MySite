@@ -1,1 +1,5 @@
-install: false
+install: true
+deploy:
+  provider: firebase
+  token:
+    secure: "$FIREBASE_TOKEN"
