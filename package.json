@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "test": "./node_modules/.bin/nyc ./node_modules/.bin/ava -v",
+    "report-coverage": "./node_modules/.bin/nyc report --reporter=lcov > coverage.lcov && codecov",
+    "standard": "./node_modules/.bin/standard index.js"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "co-exec": "^1.0",
+    "codecov": "^1.0.1",
+    "ghooks": "^1.2.4",
+    "nyc": "^7.0.0",
+    "standard": "^7.1.2"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run standard"
+    }
+  },
+  "dependencies": {}
+}
